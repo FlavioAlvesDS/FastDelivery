@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>resultado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<p><ion-item>Nome : {{nome}}</ion-item></p>
+<p><ion-item>Email :{{email}}</ion-item></p>
+<p><ion-item>Mensagem :{{msg}}</ion-item></p>
+</ion-content>
+
+<ion-footer class="rodape">
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        
+        <ion-tab-button href="home">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Inico</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button>
+          <ion-icon name="map"></ion-icon>
+          <ion-label>Google Maps</ion-label>
+        </ion-tab-button>
+  
+          <ion-tab-button href="contato">
+          <ion-icon name="contacts"></ion-icon>
+          <ion-label>Contato</ion-label>
+        </ion-tab-button>
+  
+    <ion-tab-button href="login">
+      <ion-icon name="information-circle"></ion-icon>
+      <ion-label>Sair</ion-label>
+    </ion-tab-button>
+      </ion-tab-bar>
+  
+    </ion-tabs>
+  </ion-footer>

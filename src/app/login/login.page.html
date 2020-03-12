@@ -1,0 +1,55 @@
+<ion-content>
+  <!--BACKGROUD-->
+  <div class="bg-logn">
+    <div class="owerlay">
+      <div class="logo">
+
+      </div>
+      <!-- LOGO -->
+
+      <!-- TEXTOS -->
+      <div class="txt">
+        <!-- TÍTULO -->
+        <h5>
+          Que bom ter você por aqui !
+        </h5>
+        <!-- SUBTÍTULO -->
+        <p class="txtSub">
+          Entre com sua conta para continuar
+        </p>
+      </div>
+
+      <!-- FORMS E CTA -->
+      <div class="formLogin">
+        <form (ngSubmit)="envioForm($event)">
+          <ion-item class="bg-transparent">
+            <ion-label stacked></ion-label>
+            <ion-input type="email" [(ngModel)]="formLogin.email" placeholder="Email" name="email"></ion-input>
+          </ion-item>
+
+          <ion-item class="bg-transparent">
+
+            <ion-label stacked></ion-label>
+            <ion-input type="password" [(ngModel)]="formLogin.senha" name="senha" placeholder="Senha"></ion-input>
+          </ion-item>
+
+          
+            <div>
+              <ion-button class="ctaLogin" type="submit" >Entrar</ion-button>
+            </div>
+          
+          <!-- NOVA CONTA -->
+          <a href="registro">
+            <div class="txtLogin">
+              Quero criar uma nova conta
+            </div>
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</ion-content>

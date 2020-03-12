@@ -1,0 +1,90 @@
+.bg-logn{
+    width: 100%;
+    height: 100%;
+    background-image:url('/assets/img/burguer.jpg');
+    background-position: center;
+    background-size: cover;
+
+        .owerlay{
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.76);
+        }
+        .logo{
+            width: 100%;
+            height: 25%;
+            margin: 0 auto;
+            background-image: url('/assets/img/ifoodLogo.png');
+            background-size: 100% 100%;
+        }
+        .txt{
+            width: 100%;
+            height: 80px;
+            font-size: 25pt;
+            color: rgba(240, 248, 255, 0.87);
+            text-align: center;
+            .txtSub{
+
+                font-size: 12pt;
+                color: rgba(240, 248, 255, 0.74);
+                text-align: center; 
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+        .formLogin{
+            width: 80%;
+            margin: 10% auto;
+            margin-top: 5%;
+            border-radius: 10px;
+            
+            .bg-transparent{
+                --background-color: rgba(0, 255, 255, 0.103);
+                border-radius: 10px;
+                margin: 10px auto;
+            }
+            ion-input {
+        
+                --color: #111010;
+                --placeholder-color: #101111;
+
+            }
+            .ctaLogin{
+                width: 50%;
+                margin-left:25%;
+                margin-top: 10%;
+                height: 40px;
+                font-size: 15pt;
+                color:#ffffff;
+               
+                border-radius: 10px;
+              
+                text-align: center;
+            }
+            .ctaLogin:hover{
+                border:2px solid #b90202;
+                width: 60%;
+                margin-left:20%;
+                margin-top: 10%;
+				padding:4px ;
+            }
+            .txtLogin{
+
+                font-size: 13pt;
+                margin: 10px;
+                color: rgb(240, 248, 255);
+                text-align: center;
+            }
+
+
+    }
+    a:link {
+         
+        background-color: transparent; 
+        text-decoration: none;
+      }
+
+}
+
+
+

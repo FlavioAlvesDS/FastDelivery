@@ -1,0 +1,69 @@
+
+    <ion-content>
+      <div class="bg-register" >
+        <div class="owerlay">
+          <div class="logo">
+  
+          </div>
+          <!-- LOGO -->
+  
+          
+  
+          <!-- FORMS E CTA -->
+          <div class="formLogin">
+            <h1 class="contato"><B>CONTATO</B></h1>
+            <ion-item class="bg-transparent">
+              <ion-label stacked></ion-label>
+              <ion-input type="text" placeholder="Nome Completo" [(ngModel)]="formDados.nome"></ion-input>
+            </ion-item>
+  
+            <ion-item class="bg-transparent">
+              <ion-label stacked></ion-label>
+              <ion-input type="email" placeholder="Email" [(ngModel)]="formDados.email"></ion-input>
+            </ion-item>
+  
+            <ion-item class="bg-transparent">
+                <ion-label></ion-label>
+                <ion-textarea rows="6" cols="20" placeholder="Deixe aqui sua mensagem..." [(ngModel)]="formDados.msg"></ion-textarea>
+              </ion-item>
+              <ion-item class="select" color="primary">
+                  <ion-label>Deseja receber notificações </ion-label>
+                  <ion-toggle slot="start" name="blackberry" color="primary" checked></ion-toggle>
+                </ion-item>
+        
+              <div class="ctaLogin" (click)="openResultado()">
+                Enviar
+              </div>
+          
+
+          </div>
+        </div>
+      </div>
+  </ion-content>
+    <ion-footer class="rodape">
+      <ion-tabs>
+        <ion-tab-bar slot="bottom">
+          
+          <ion-tab-button href="home">
+            <ion-icon name="home"></ion-icon>
+            <ion-label>Inico</ion-label>
+          </ion-tab-button>
+    
+          <ion-tab-button>
+            <ion-icon name="map"></ion-icon>
+            <ion-label>Google Maps</ion-label>
+          </ion-tab-button>
+    
+            <ion-tab-button href="contato">
+            <ion-icon name="contacts"></ion-icon>
+            <ion-label>Contato</ion-label>
+          </ion-tab-button>
+    
+      <ion-tab-button href="login">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>Sair</ion-label>
+      </ion-tab-button>
+        </ion-tab-bar>
+    
+      </ion-tabs>
+    </ion-footer>
